@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292929"
+    tools:context=".Cadastro">
+
+    <TextView
+        android:id="@+id/my_textview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/header"
+        android:text="Seja bem vindo!"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:paddingTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextNome"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/campo_preenchimento"
+        android:ems="10"
+        android:hint="Nome e sobrenome:"
+        android:paddingStart="20dp"
+        android:textAlignment="inherit"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_textview" />
+
+    <EditText
+        android:id="@+id/editTextTextCPF"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/campo_preenchimento"
+        android:ems="10"
+        android:hint="CPF:"
+        android:paddingStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="inherit"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextNome" />
+
+    <EditText
+        android:id="@+id/editTextTextNascimento"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/campo_preenchimento"
+        android:ems="10"
+        android:hint="Data de nascimento DD/MM/AAAA"
+        android:inputType="date"
+        android:paddingStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="inherit"
+        android:textColorHint="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextCPF" />
+
+    <EditText
+        android:id="@+id/editTextTextSenha"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/campo_senha"
+        android:ems="10"
+        android:hint="Senha:"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="inherit"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextNascimento" />
+
+    <EditText
+        android:id="@+id/editTextTextSenha2"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/campo_senha"
+        android:ems="10"
+        android:hint="Repita a senha:"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="inherit"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextSenha" />
+
+    <EditText
+        android:id="@+id/editTextTextNumero"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/campo_preenchimento"
+        android:ems="10"
+        android:hint="Celular DDD + número:"
+        android:inputType="phone"
+        android:paddingStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="inherit"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextSenha2" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:text="Declaro que li e aceito os termos e condições e a política de privacidade."
+        android:textColor="@color/orange"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextNumero" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:text="Quero receber ofertas por e-mail e WhatsApp."
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:text="CADASTRAR"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Precisa de ajuda?"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button3"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:background="@drawable/button"
+        android:text="Listar"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
